@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetaCon</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+#main {
+    width: 100%;
+    background-color: ghostwhite;
+    border: 1px solid #222831;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Added transition effect */
+}
+
+#logo {
+    margin-top: 20px;
+    float: right;
+}
+
+#logo a {
+    border-radius: 5px;
+    border-color: black ;
+    border-style: outset;
+    display: inline-block;
+    padding: 14px 16px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out; /* Added transition effect */
+}
+
+#navigation {
+    float: left;
+    margin-left: 30px;
+}
+
+#navigation img {
+    display: block;
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Added transition effect */
+}
+
+#title_bar {
+    background-color: black;
+    border: 1px solid #222831;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    color: ghostwhite;
+    font-family: "Helvetica Neue";
+    transition: all 0.3s ease-in-out; /* Added transition effect */
+}
+
+#Content {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-attachment:scroll;
+    background-position: center;
+    border: 1px solid #222831;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: flex; /* Added to align sidebar and main content */
+    justify-content: space-between; /* Added to evenly distribute sidebar and main content */
+    transition: all 0.3s ease-in-out; /* Added transition effect */
+}
+
+#SideBar {
+    width: 20%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #202020;
+    border: solid black;
+    color: whitesmoke;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+#SideBar a {
+    color: ghostwhite;
+    margin: 10px;
+}
+
+#MainContent {
+    width: 78%;
+    padding: 20px;
+    transition: all 0.3s ease-in-out; /* Added transition effect */
+}
+
+.image-container {
+    margin: 20px 0;
+    margin-left: 25%;
+
+}
+
+.image-container img {
+    width: 50%;
+    height: 50%;
+    border: 1px solid #222831;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out; /* Added transition effect */
+}
+
+.image-container p {
+    padding-right: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.image-container h1 {
+    margin-left: auto;
+}
+
+#footer {
+    background-color: ghostwhite;
+    border: 1px solid #222831;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 30px;
+    clear: both;
+    transition: all 0.3s ease-in-out; /* Added transition effect */
+}
+
+#footer img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+#footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #222831;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific elements */
+#title_bar h1,
+#title_bar p,
+#Content h2,
+#Content p,
+#Content h3,
+#Content ul,
+#SideBar h4,
+#SideBar ul,
+#MainContent h4,
+#MainContent ul {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="main">
+
+        <div id="navigation">
+            <a href="#">
+                <img src="images/web_logo.png" alt="MetaCon Logo">
+            </a>
+        </div>
+
+        <div id="logo">
+            <h5>
+                <a href="#">Home</a>
+                <a href="#">About MetaCon</a>
+                <a href="#">Events & Activities</a>
+                <a href="#">Games & Misc.</a>
+                <a href="#">The Crew</a>
+            </h5>
+        </div>
+
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="title_bar">
+        <h1>MetaCon</h1>
+        <p>Innovation and Gaming Collide.</p>
+    </div>
+
+    <div id="Content">
+        <div id="SideBar">
+            <h4>Others <br> <br></h4>
+            <ul>
+                <li><a href="#">Schedule</a></li> <br> <br>
+                <li><a href="#">Guests</a></li> <br> <br>
+                <li><a href="#">Exhibitors</a></li> <br> <br>
+            </ul>
+        </div>
+        <div id="MainContent">
+            <h2>Welcome to MetaCon</h2> <br>
+            <p>MetaCon is the ultimate destination for innovation enthusiasts and gaming aficionados. Dive into the world of cutting-edge technology, explore thrilling gaming experiences, and connect with like-minded individuals.</p> <br> <br>
+            <h3>Upcoming Events</h3> <br>
+            <ul>
+                <li>Keynote Speech by Industry Experts</li>
+                <li>E-Sports Tournament</li>
+                <li>Virtual Reality Showcase</li>
+                <li>Panel Discussions</li>
+            </ul>
+            <!-- Image Containers Start Here -->
+            <div class="image-container">
+                <img src="images/event1.jpg" alt="Event 1">
+                <h1>Gaming</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique turpis et velit aliquet tincidunt. In id enim non arcu malesuada scelerisque. Nullam lobortis mi justo, at tempor libero tempus id. Integer hendrerit libero imperdiet nisi laoreet laoreet.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/event2.png" alt="Event 2">
+                <h1>Virtual Reality</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique turpis et velit aliquet tincidunt. In id enim non arcu malesuada scelerisque. Nullam lobortis mi justo, at tempor libero tempus id. Integer hendrerit libero imperdiet nisi laoreet laoreet.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/event3.jpg" alt="Event 3">
+                <h1>Gaming Conventions</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique turpis et velit aliquet tincidunt. In id enim non arcu malesuada scelerisque. Nullam lobortis mi justo, at tempor libero tempus id. Integer hendrerit libero imperdiet nisi laoreet laoreet.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/event4.webp" alt="Event 4">
+                <h1>E-Sports</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique turpis et velit aliquet tincidunt. In id enim non arcu malesuada scelerisque. Nullam lobortis mi justo, at tempor libero tempus id. Integer hendrerit libero imperdiet nisi laoreet laoreet.</p>
+            </div>
+            <div class="image-container">
+                <img src="images/event5.jpg" alt="Event 5">
+                <h1>Augmented Reality</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique turpis et velit aliquet tincidunt. In id enim non arcu malesuada scelerisque. Nullam lobortis mi justo, at tempor libero tempus id. Integer hendrerit libero imperdiet nisi laoreet laoreet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <img src="images/web_logo.png" alt="MetaCon Logo"> <br>
+        <p>Designed by Louie John Pamilar | louiejohnpamilar@gmail.com</p>
+    </div>
+</div>
+</body>
+</html>
